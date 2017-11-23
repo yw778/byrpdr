@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/speed_suggestion_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="0dp"
+    android:background="@drawable/back_middle"
+    android:orientation="vertical" >
+
+
+    <RelativeLayout
+        android:id="@+id/rel_operator"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_margin="1dp"
+        android:background="@drawable/toumingbar" >
+
+        <ImageView
+            android:id="@+id/image_operator"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/operator" />
+
+        <TextView
+            android:id="@+id/tv_operator"
+            android:layout_width="fill_parent"
+            android:layout_height="17dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/image_operator"
+            android:text="@string/operator"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tv_operator_result"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:text="30 Mbps"
+            android:textColor="#00ff00"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_networktype"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_margin="1dp"
+        android:background="@drawable/toumingbar" >
+
+        <ImageView
+            android:id="@+id/image_networktype"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/results_icon_3g" />
+
+        <TextView
+            android:id="@+id/tv_networktype"
+            android:layout_width="fill_parent"
+            android:layout_height="17dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/image_networktype"
+            android:text="@string/networktype"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tv_networktype_result"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:text="30 Mbps"
+            android:textColor="#00ff00"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_time"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_margin="1dp"
+        android:background="@drawable/toumingbar" >
+
+        <ImageView
+            android:id="@+id/image_time"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/time" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="fill_parent"
+            android:layout_height="17dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/image_time"
+            android:text="@string/time"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tv_time_result"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:text="30 Mbps"
+            android:textColor="#00ff00"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_download"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_margin="1dp"
+        android:background="@drawable/toumingbar" >
+
+        <ImageView
+            android:id="@+id/image_download"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/download_icon" />
+
+        <TextView
+            android:id="@+id/tv_download"
+            android:layout_width="fill_parent"
+            android:layout_height="17dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/image_download"
+            android:text="下行平均/最大"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tv_download_result"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:text="30 Mbps"
+            android:textColor="#00ff00"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_upload"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_margin="1dp"
+        android:background="@drawable/toumingbar" >
+
+        <ImageView
+            android:id="@+id/image_upload"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/upload_icon" />
+
+        <TextView
+            android:id="@+id/tv_upload"
+            android:layout_width="fill_parent"
+            android:layout_height="17dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/image_upload"
+            android:text="上行平均/最大"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tv_upload_result"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:text="30 Mbps"
+            android:textColor="#00ff00"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_ping"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_margin="1dp"
+        android:background="@drawable/toumingbar" >
+
+        <ImageView
+            android:id="@+id/image_ping"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ping" />
+
+        <TextView
+            android:id="@+id/tv_ping"
+            android:layout_width="fill_parent"
+            android:layout_height="17dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/image_ping"
+            android:text="@string/ping"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tv_ping_result"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:text="30 Mbps"
+            android:textColor="#00ff00"
+            android:textSize="20sp" />
+    </RelativeLayout>
+  <RelativeLayout
+        android:id="@+id/uptrafficcost"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_margin="1dp"
+        android:background="@drawable/toumingbar" >
+
+        <ImageView
+            android:id="@+id/uptrafimage"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/menu_elevation" />
+
+        <TextView
+            android:id="@+id/uptrafinfo"
+            android:layout_width="fill_parent"
+            android:layout_height="17dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/uptrafimage"
+            android:text="上行/下行流量"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/uptrafdetail"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:text="30 Mbps"
+            android:textColor="#00ff00"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <!--  <RelativeLayout
+        android:id="@+id/downtrafficcost"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_margin="1dp"
+        android:background="@drawable/toumingbar" >
+
+        <ImageView
+            android:id="@+id/downtrafimage"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ipcon" />
+
+        <TextView
+            android:id="@+id/downtrafinfo"
+            android:layout_width="fill_parent"
+            android:layout_height="17dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/downtrafimage"
+            android:text="下行流量"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/downtrafdetail"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:text="30 Mbps"
+            android:textColor="#00ff00"
+            android:textSize="20sp" />
+    </RelativeLayout> -->
+    <RelativeLayout
+        android:id="@+id/rel_location"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_margin="1dp"
+        android:background="@drawable/toumingbar" >
+
+        <ImageView
+            android:id="@+id/image_location"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/location" />
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="fill_parent"
+            android:layout_height="17dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/image_location"
+            android:text="@string/location"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tv_location_result"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:text="30 Mbps"
+            android:textColor="#00ff00"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_ip"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_margin="1dp"
+        android:background="@drawable/toumingbar" >
+
+        <ImageView
+            android:id="@+id/image_ip"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ipcon" />
+
+        <TextView
+            android:id="@+id/tv_ip"
+            android:layout_width="fill_parent"
+            android:layout_height="17dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/image_ip"
+            android:text="ip信息"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tv_ip_result"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:text="30 Mbps"
+            android:textColor="#00ff00"
+            android:textSize="20sp" />
+    </RelativeLayout>
+  
+
+    <RelativeLayout
+        android:id="@+id/rel_return"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_margin="1dp" >
+
+        <ImageView
+            android:id="@+id/image_return"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/tv_return"
+            android:src="@drawable/history_back" />
+
+        <TextView
+            android:id="@+id/tv_return"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="2dp"
+            android:text="返回"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+</LinearLayout>
